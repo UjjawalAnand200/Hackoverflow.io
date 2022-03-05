@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        Pick the Colour Game 
+    </div>
+    <div class="body" id="body">
+        <div class="nav">
+            <button onclick="levelChange('same')">Change Colors</button>
+            <div class="level">
+                <button onclick="levelChange('easy')">Easy</button>
+                <button onclick="levelChange('hard')">Hard</button>
+            </div>
+        </div>
+        <div id="result">
+            You need to select the tile with the colour code given..
+        </div>
+        <div class="game">
+            <div id="flex"></div>
+            <table id="card">
+            </table>
+        </div>
+        <div class="notice" id="notice">
+           <p>Congrats You Won!</p>
+            <button onclick="levelChange('same')">Play Again</button>
+        </div>
+    </div>
+    <div class="warning">
+        Not Supported on this device!
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
